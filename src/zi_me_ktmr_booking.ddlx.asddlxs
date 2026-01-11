@@ -1,0 +1,48 @@
+@Metadata.layer: #CORE
+@UI: {
+headerInfo: {  typeName: 'Booking',
+               typeNamePlural: 'Bookings',
+               title: { type: #STANDARD, label: 'Travel', value: 'Booking_Id' } }
+}
+annotate entity ZI_KTMR_BOOKING with
+{
+  @UI.facet: [  { id: 'Travel',
+                  purpose: #STANDARD,
+                  type: #IDENTIFICATION_REFERENCE,
+                  label: 'Booking',
+                  position: 10 } ]
+  @UI: { lineItem: [{ position: 10 }],
+         identification: [{ position: 10 }],
+         selectionField: [{ position: 10 }] }
+  travel_id;
+  @UI: { lineItem: [{ position: 10 }],
+        identification: [{ position: 10 }],
+        selectionField: [{ position: 10 }] }
+  booking_id;
+  @UI: { lineItem: [{ position: 10 }],
+       identification: [{ position: 10 }],
+       selectionField: [{ position: 10 }] }
+  Booking_Date;
+  @UI: { lineItem: [{ position: 10 }],
+       identification: [{ position: 10 }],
+       selectionField: [{ position: 10 }] }
+  Customer_Id;
+  @UI: { lineItem: [{ position: 10 }],
+      identification: [{ position: 10 }],
+      selectionField: [{ position: 10 }] }
+  Carrier_Id;
+  @UI: { lineItem: [{ position: 10 }],
+       identification: [{ position: 10 }],
+       selectionField: [{ position: 10 }] }
+  Connection_Id;
+  @UI: { lineItem: [{ position: 10 }],
+      identification: [{ position: 10 }],
+      selectionField: [{ position: 10 }] }
+  Flight_Date;
+  @UI: { lineItem: [{ position: 10 }],
+   identification: [{ position: 10 }],
+   selectionField: [{ position: 10 }] }
+  Currency_Code;
+
+
+}
